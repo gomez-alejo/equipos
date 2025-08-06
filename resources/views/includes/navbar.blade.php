@@ -71,7 +71,7 @@
                                 <p class="text-xs text-gray-600">{{ Auth::user()->email ?? 'usuario@ejemplo.com' }}</p>
                             </div>
                             <div class="py-2">
-                                <a href="#" class="dropdown-item flex items-center px-4 py-3 text-gray-700 text-sm">
+                                <a href="{{ route('admin.dashboard', Auth::user()) }}" class="dropdown-item flex items-center px-4 py-3 text-gray-700 text-sm">
                                     <i class="fas fa-user-circle mr-3 text-blue-500"></i>
                                     Perfil
                                 </a>
@@ -152,7 +152,7 @@
                                 <p class="text-xs text-blue-200">{{ Auth::user()->email ?? 'usuario@ejemplo.com' }}</p>
                             </div>
                         </div>
-                        <a href="#" class="mobile-nav-item flex items-center px-4 py-3 text-white rounded-lg">
+                        <a href="{{ route('admin.dashboard', Auth::user()) }}" class="mobile-nav-item flex items-center px-4 py-3 text-white rounded-lg">
                             <i class="fas fa-user-circle mr-3 text-yellow-300"></i>
                             Mi Perfil
                         </a>
